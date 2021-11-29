@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from "react";
 import axios from "axios";
 import {GetData} from "./functions/function_get_data";
-import { petition } from "./callbacks/callback_axios_api";
+import { petition } from "./request/callback_axios_api";
 
 const baseURL = "https://api.github.com/users/ivancastro773";
 const user = {email:"", name:"", bio:""};
@@ -20,9 +20,12 @@ const MyUser = ()=>{
     
     return(
         <div>
-            <h1>Mis datos</h1>
+            <h3>Mis datos</h3>
+            <p>======Email=======</p>
             <div>{user.email}</div>
+            <p>======Nombre=======</p>
             <div>{user.name}</div>
+            <p>======Biografia=======</p>
             <div>{user.bio}</div>
         </div>
     )
