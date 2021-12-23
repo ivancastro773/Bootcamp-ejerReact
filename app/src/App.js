@@ -1,19 +1,22 @@
 import React,{Fragment} from "react";
-/* import InternalA from "./components/Internal_a";
-import InternalB from "./components/Internal_b";
-import InternalC from "./components/Internal_c"; */
 import User from "./components/users/User";
 import MyUser from "./components/myUser/MyUser";
 import Foo from "./components/foo/Foo";
-
-const data ={email:"ivan@gmail.com",name:"ivan",lastname:"castro"}
+import Origin from "./components/form/origin";
+import Card from "./components/card/Card";
+import BoxCards from "./components/boxCards/BoxCards";
+import Boot from "./components/boot/Boot";
+/* const data ={email:"ivan@gmail.com",name:"ivan",lastname:"castro"} */
 function App() {
   return (
-    <Fragment>
-      {/* <User/> */}
-      {<MyUser/>}
-      {/* <Foo {...data} apodo="chino" /> */}
-    </Fragment>
+      <div className="body">
+        {/* <User/> */}
+        {/* <MyUser/> */}
+        {/* <Foo {...data} apodo="chino" /> */}
+        {/* <Origin/> */}
+        {/* <BoxCards/> */}
+        <Boot/>
+      </div>
   );
 }
 
